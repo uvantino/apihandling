@@ -5,10 +5,17 @@ const app = express();
 // app.use(cors());
 
 app.get('/api/products', (req, res) => {
-    const products = [{
+    const products = [
+        {
         id: 1,
         name: 'table wooden',
         price: 200,
+        image: "",
+    }
+    ,{
+        id: 2,
+        name: 'cloths',
+        price: 300,
         image: "",
     }]
     if (req.query.search) {
